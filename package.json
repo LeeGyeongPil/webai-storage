@@ -1,0 +1,46 @@
+{
+  "name": "webai-storage",
+  "version": "0.1.0",
+  "description": "Inventory, delete and pre-check storage for in-browser AI models (Transformers.js, WebLLM) across Cache API, IndexedDB and OPFS.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "keywords": ["transformers.js", "webllm", "on-device-ai", "cache-api", "opfs", "indexeddb", "storage-quota"],
+  "repository": { "type": "git", "url": "git+https://github.com/LeeGyeongPil/webai-storage.git" },
+  "engines": { "node": ">=22.12" },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+    "./react": { "types": "./dist/react/index.d.ts", "default": "./dist/react/index.js" },
+    "./testing": { "types": "./dist/testing/index.d.ts", "default": "./dist/testing/index.js" },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist","README.md", "README.ko.md", "CHANGELOG.md", "LICENSE"],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "npm run build && vitest run",
+    "example": "npm run build --silent && node examples/inventory.mjs",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true }
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "fake-indexeddb": "6.2.8",
+    "happy-dom": "21.0.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0"
+  }
+}
