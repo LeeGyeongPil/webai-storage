@@ -1,0 +1,36 @@
+{
+  "recordedWith": { "transformers.js": "4.3.2", "web-llm": "0.2.88", "recordedOn": "2026-11-17" },
+  "estimate": { "quota": 62914560, "usage": 25782199 },
+  "cacheApi": {
+    "cacheName": "transformers-cache",
+    "entries": [
+      { "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/config.json", "bytes": 650 },
+      { "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json", "bytes": 366 },
+      { "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer.json", "bytes": 711661 },
+      { "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/onnx/model_quantized.onnx", "bytes": 22972370 }
+    ]
+  },
+  "indexedDb": {
+    "database": "webllm/model",
+    "buffers": [
+      { "url": "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q4f16_1-MLC/resolve/main/params_shard_0.bin", "bytes": 2097152 }
+    ],
+    "json": [
+      {
+        "url": "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q4f16_1-MLC/resolve/main/mlc-chat-config.json",
+        "value": { "model_type": "llama", "quantization": "q4f16_1", "context_window_size": 4096 }
+      }
+    ]
+  },
+  "opfs": {
+    "directory": "tvmjs-opfs-store/webllm/model",
+    "files": [
+      {
+        "stem": "5d41402abc4b2a76b9719d911017c592",
+        "url": "https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q4f16_1-MLC/resolve/main/params_shard_1.bin",
+        "nbytes": 4000,
+        "binBytes": 1000
+      }
+    ]
+  }
+}
